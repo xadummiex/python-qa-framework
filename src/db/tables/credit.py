@@ -1,0 +1,17 @@
+from sqlalchemy import Integer, Column, ForeignKey, Float, DateTime
+
+from src.db.base import Base
+
+
+class Credit(Base):
+    __tablename__ = "credit"
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    account_id = Column(Integer, ForeignKey("account.id"), nullable=False)
+    amount = Column(Float, nullable=False)
+    term_months = Column(Integer, nullable=False)
+    balance = Column(Float, nullable=False)
+    created_at = Column(DateTime, nullable=False)
+
+    def __repr__(self):
+        return (f"<Credit({self.id=}, {self.account_id=}, {self.amount=}, {self.term_month=}"
+                f", {self.balance=}, {self.created_at=})>")

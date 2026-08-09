@@ -1,0 +1,22 @@
+[project]
+name = "bank-api"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "xadummiex", email = "erik.mursalimov@mail.ru" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "allure-pytest>=2.16.0",
+    "psycopg2-binary>=2.9.12",
+    "pydantic>=2.13.4",
+    "pydantic-settings>=2.14.2",
+    "pytest>=9.1.1",
+    "requests>=2.34.2",
+    "rstr>=3.2.2",
+    "sqlalchemy>=2.0.51",
+]
+
+[tool.uv]
+package = false
