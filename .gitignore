@@ -15,3 +15,7 @@ wheels/
 # IDE и кэши
 .idea/
 .pytest_cache/
+
+# Отчёты
+allure-results/
+allure-report/
