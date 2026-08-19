@@ -10,7 +10,7 @@ wheels/
 .venv
 
 # Секреты
-# .env
+.env
 
 # IDE и кэши
 .idea/
