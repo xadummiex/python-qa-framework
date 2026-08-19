@@ -3,8 +3,8 @@ pytest.register_assert_rewrite("src.checks")
 
 
 pytest_plugins = [
-    "src.fixtures.db",
-    "src.fixtures.sessions",
-    "src.fixtures.api",
-    "src.fixtures.data",
+    "bank_api.fixtures.db",
+    "bank_api.fixtures.sessions",
+    "bank_api.fixtures.api",
+    "bank_api.fixtures.data",
 ]

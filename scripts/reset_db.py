@@ -13,7 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from sqlalchemy import create_engine, text
 
-from src.config import settings
+from bank_api.config import settings
 
 # Порядок для вывода. В TRUNCATE порядок не важен — CASCADE разберётся со связями.
 TABLES = ("user", "account", "transaction", "credit")

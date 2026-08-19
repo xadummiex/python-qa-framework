@@ -4,9 +4,9 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from sqlalchemy import inspect
-from src.db.base import Base
-from src.db.engine import engine
-from src.db.tables import account, credit, transactions, user  # noqa: F401
+from bank_api.db.base import Base
+from bank_api.db.engine import engine
+from bank_api.db.tables import account, credit, transactions, user  # noqa: F401
 
 
 def main() -> None:
